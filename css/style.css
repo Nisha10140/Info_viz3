@@ -1,0 +1,316 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family:  'Open Sans', sans-serif;
+}
+:root{
+    --text-color: #fff;
+    --bg-color: rgb(15, 15, 15);
+    --main-color: #ffa343;
+
+    --h1-font:6rem;
+    --h2-font:3rem;
+    --p-font:1rem;
+}
+body{
+    color: var(--text-color);
+    background: var(--bg-color);
+}
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+    background: transparent;
+    padding: 27px 17%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all .50s ease;
+}
+.logo{
+    font-size: 22px;
+    color: var(--text-color);
+    font-weight: 700;
+}
+span{
+    color: var(--text-color);
+}
+.h-right{
+    display: flex;
+    align-items: center;
+}
+.h-right a{
+    color: var(--text-color);
+    font-size: var(--p-font);
+    font-weight: 500;
+    margin: 15px 22px;
+    transition: all .50s ease;
+}
+.h-right a:hover{
+    color: var(--main-color);
+}
+section{
+    padding: 70px 17% 60px;
+}
+.home{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to left, rgba(15,15,15,0.6), rgba(15,15,15,0.3)), url(../Images/artificial-8587673.jpg);
+    background-size: cover;
+    background-position: bottom center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.home-text h1{
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 80px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: var(--main-color);
+}
+.home-text h5{
+    font-size: var(--h1-font);
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+.home-text p{
+    font-size: var(--p-font);
+    font-weight: 500;
+    line-height: 30px;
+    color: #ffffffab;
+    margin-bottom: 35px;
+}
+header.sticky{
+    padding: 8px 17%;
+    background: transparent;
+    backdrop-filter: blur(5px);
+}
+.info{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 9rem;
+}
+.info-img img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.info-content h5{
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--main-color);
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    margin-bottom: 20px;
+}
+.info-content h2{
+    font-size: var(--h2-font);
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+.info-content p{
+    text-align: left;
+    font-size: var(--p-font);
+    font-weight: 500;
+    line-height: 30px;
+    color: #ffffffab;
+    margin-bottom: 35px;
+}/*
+.process {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.chart h5{
+    text-align: center;
+    font-size: var(--h1-font);
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+.chart img{
+    width: 2%;
+    height: auto;
+}*/
+section.process {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+    text-align: center; /* Center text horizontally */
+}
+
+/* Style for the container div */
+.Chart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Style for the heading */
+.Chart h5 {
+    border-top: 1px solid rgb(207, 205, 205);
+    border-bottom: 1px solid rgb(207, 205, 205);
+    margin-top: 20px;
+    margin-bottom: 40px; /* Space between heading and image */
+    padding-top: 10px; /* Adjust this value to increase space between border-top and text */
+    padding-bottom: 10px; /* Adjust this value to increase space between text and border-bottom */
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--main-color);
+    text-transform: uppercase;
+    letter-spacing: 6px;/*n heading and image */
+}
+
+/* Optional: Style for the image */
+.Chart img {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    max-width: 100%;
+    height: auto;
+}
+
+/*scetion where does water go*/
+.water{
+    padding-top: 100px;
+    display: block;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    gap: 9rem;
+}
+.water-img img{
+    width: 80%;
+    padding-left: 150px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.water-head h5{
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--main-color);
+    margin-bottom: 60px;
+}
+.water-content p{
+    margin-top: 50px;
+    text-align: center;
+    font-size: var(--p-font);
+    font-weight: 500;
+    line-height: 30px;
+    color: #ffffffab;
+    margin-bottom: 35px;
+}
+/* DATA center*/
+.data-center{
+    padding-top: 80px;
+    display: block;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    gap: 9rem;
+}
+.data-img img{
+    width: 90%;
+    padding-left: 80px;
+    height: auto;
+    /*border-radius: 10px;*/
+}
+
+.data-head h5{
+    text-align: center;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--main-color);
+    margin-bottom: 60px;
+    letter-spacing: 3px;
+}
+.data-content p{
+    text-align: center;
+    padding-top: 50px;
+    font-size: var(--p-font);
+    font-weight: 500;
+    line-height: 30px;
+    color: #ffffffab;
+    margin-bottom: 35px;
+}
+.data-content a:active{
+    color: aqua;
+    text-decoration: none;
+}
+/*Analysis*/
+.state{
+    padding-top: 80px;
+    display: block;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 9rem;
+}
+
+.state-head h5{
+    text-align: center;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--main-color);
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+}
+.state-img{
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 15rem;
+}
+.maharashtra img{
+    width: 100%;
+    height: auto;
+}
+.tamilnadu img{
+    width: 100%;
+    height: auto;
+}
+.state-content p{
+    text-align: center;
+    font-size: var(--p-font);
+    font-weight: 500;
+    line-height: 30px;
+    color: #ffffffab;
+    margin-bottom: 35px;
+}
+.state-chart img{
+    width: 100%;
+    height: auto;
+}
+.research {
+    position: relative;
+    height: 20vh;
+    margin-bottom: 20px;
+    padding: 0;
+    width: 100%;  
+}
+.research h5{
+    text-align: center;
+    font-size: var(--p-font);
+    font-weight: 150;
+    line-height: 30px;
+    color: var(--text-color);
+}
